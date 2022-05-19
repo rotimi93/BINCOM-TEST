@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{pl}}</title>
+</head>
+<body>
+<h1>WELCOME TO BINCOM TEST<br>INEC - POLL</h1>
+<a href="{% url 'home' %}">Go Home</a>
+<nav>
+<ul>
+	<li><a href="{% url 'poll_list' %}">Polling List</a></li>
+	<li><a href="{% url 'poll_detail' %}">Polling Details</a></li>
+	<li><a href="{% url 'create_poll' %}">Vote Here</a></li>
+</ul>
+</nav>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
